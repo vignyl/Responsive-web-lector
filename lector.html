@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>Video player</title>
+	<link rel="stylesheet" type="text/css" href="lector.css"> 
+	<script type="text/javascript" src="https://kit.fontawesome.com/332a215f17.js"></script> 
+</head>
+<body>
+	<div class="mtvs-player">
+		<div class="mtvs-controls-resize">
+			<div class="mtvs-controls-container-resize"> 
+				<div class="mtvs-control-group-resize">
+					<div class="mtvs-left-controls-resize" style="z-index: 10; margin-left: 10px;"> 
+						<i class="mtvs-icon-fas fas fa-expand-arrows-alt" title="Enlarge"></i> 
+					</div>
+					<div class="mtvs-right-controls-resize" style="z-index: 10; margin-right: 10px;">   
+						<i class="mtvs-icon-fas fas fa-times" title="Close player"></i> 
+					</div>
+				</div>
+			</div>
+		</div>
+		<video class="mtvs-video" playsinline controlsList="nodownload"> 
+  			<source src="C:\Users\MTVS\Downloads\Video\Deep Learning With PyTorch - Full Course.mp4" type="video/mp4">
+		</video>
+		<div class="mtvs-play-notif">
+			<i class="mtvs-icon-fas fas fa-pause" title="Play" id="mtvs-play-notif-icon"></i>
+		</div>
+		<div class="mtvs-volume-notif">
+			<i class="mtvs-icon-fas fas fa-volume-up" id="mtvs-volume-notif-icon"></i>
+		</div>
+		<div class="mtvs-controls">
+			<div class="mtvs-controls-container">
+				<div class="mtvs-progress-span" title="Seek">
+					<div class="mtvs-progress-bar"></div>
+				</div>
+				<div class="mtvs-control-group">
+					<div class="mtvs-left-controls">
+						<div class="mtvs-play-options">
+							<i class="mtvs-icon-fas fas fa-play" title="Play" id="mtvs-play-btn"></i>
+						</div>
+						<div class="mtvs-volume">
+							<div class="mtvs-volume-icon">
+								<i class="mtvs-icon-fas fas fa-volume-up" title="Mute" id="mtvs-volume-icon"></i>
+							</div>
+						</div>
+						<div class="mtvs-volume-line" title="Change volume"> 
+							<div class="mtvs-volume-bar"></div>
+						</div>
+						<div class="mtvs-time">
+							<span class="mtvs-time-elapsed"> 00.00 /</span>
+							<span class="mtvs-time-duration"> 00.00</span>
+						</div>
+					</div>
+					<div class="mtvs-right-controls"> 
+						<div class="mtvs-speed" title="Playback rate">
+							<select class="mtvs-player-speed" name="mtvs-playbackRate">
+								<option value="0.5">0.5 x</option>
+								<option value="0.75">0.75 x</option>
+								<option value="1">1 x</option>
+								<option value="1.5">1.5 x</option>
+								<option value="2">2 x</option>
+							</select>
+						</div> 
+						<div id="mtvs-resize-btn" class="mtvs-resize">
+							<i id="mtvs-resize-icon"  class="mtvs-icon-fas2 fas fa-chalkboard" title="Reduce player"></i>
+						</div>
+						<div class="mtvs-fullscreen">
+							<i id="mtvs-fullscreen-icon" class="mtvs-icon-fas fas fa-expand" title="Full screen"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="lector.js"></script>
+</body>
+</html>
